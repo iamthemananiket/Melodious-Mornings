@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundmy"
+    tools:context=".MyActivity"
+    >
+    <ImageView
+        android:id="@+id/myImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/cloud"
+        android:layout_above="@+id/alarmTimePicker"/>
+    <TextView
+        android:id="@+id/myImageViewText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/myImageView"
+        android:layout_alignTop="@+id/myImageView"
+        android:layout_alignRight="@+id/myImageView"
+        android:layout_alignBottom="@+id/myImageView"
+        android:layout_margin="1dp"
+        android:gravity="center"
+        android:text="What time \nYou want to wake up?"
+        android:textSize="30dp"
+        android:textAlignment="center"
+
+        android:textColor="#263238" />
+
+    <Button
+        android:text="Next"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        android:id="@+id/alarmSet"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/nextbutton"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="68dp" />
+
+    <TimePicker
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/alarmTimePicker"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/backgroundmy"
+                />
+
+</RelativeLayout>
